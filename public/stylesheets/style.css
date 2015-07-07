@@ -1,0 +1,43 @@
+body {
+	background-color:#F1FAF6;
+}
+
+.stories-title-div {
+	text-align:center;
+}
+
+.stories-title {
+		font-size:48px;
+		color:#1790A0;
+
+}
+
+.stories-list {
+	width:100%;
+	list-style: none;
+	text-align: center;
+	padding:0;
+	margin:0;
+}
+.stories-list a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+.stories-list a:hover{
+	background-color:#2C8FC0;
+}
+
+.story-link {
+
+    height: 120px;
+    background-color: #D4E6EF;
+    padding: 25px;
+    margin-bottom: 20px;
+
+}
+
+.story-title{ 
+	font-weight: 100;
+}
