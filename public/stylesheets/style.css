@@ -1,5 +1,5 @@
 body {
-	background-color:#F1FAF6;
+	background-image: url("../images/background1.jpg");
 }
 
 .stories-title-div {
@@ -12,6 +12,11 @@ body {
 
 }
 
+.stories-container {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .stories-list {
 	width:100%;
 	list-style: none;
