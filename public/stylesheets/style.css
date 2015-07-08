@@ -1,11 +1,15 @@
 body {
-	background-image: url("../images/background1.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url(../images/background1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .stories-title-div {
 	text-align:center;
+			width:100%;
+
 }
 
 .stories-title {
@@ -55,3 +59,8 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.story-section{
+	margin-top:90px;
+}
+
