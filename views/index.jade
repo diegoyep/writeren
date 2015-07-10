@@ -1,49 +1,24 @@
 extends layout
 
 block content
-    .sidebar
-      .container.sidebar-sticky
-        .sidebar-about
-          h1.brand
-            a(href="/") diego fraselle
 
-          p.lead
-            | writer
-        ul.sidebar-nav
-          li
-            a(href="#") Blog
+  include partials/sidebar
+  .container.story-main
+        .center-flex
+            .story-section
+              .stories-container
+                ul.stories-list
+                  li.story
+                    a(href="/stories").story-link
+                      h3.story-title Stories
 
-          li
-            a(href='http://marcio.io/blog') About me
-          
-          li
-            a(href='#') Contact
-            
-          hr 
+                  li.story
+                    a(href="/serials").story-link 
+                      h3.story-title Serials
 
-          li 
-            a(href="#") VIP
-          
-        p.footnote
-          br
-          |     © 2015 Diego Frasele. All rights reserved.
-    
-    .container.story-main
-      .center-flex
-          .story-section
-            .stories-container
-              ul.stories-list
-                li.story
-                  a(href="/stories").story-link
-                    h3.story-title Stories
-
-                li.story
-                  a(href="/story").story-link 
-                    h3.story-title Articles
-
-                li.story
-                  a(href="/story").story-link 
-                    h3.story-title Serials
+                  li.story
+                    a(href="/bits").story-link 
+                      h3.story-title Bits and Pieces
 
 
           

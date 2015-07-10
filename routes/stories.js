@@ -8,4 +8,12 @@ module.exports = function(app){
 	app.get('/stories', function(req, res, next){
 		res.render('stories', {title:"stories"})
 	})
+
+	app.get('/serials', function(req, res, next){
+		res.render('serials', {title:"serials"});
+	})
+
+	app.get('/bits', function(req,res, next){
+		res.render('bits', {title: "bits"});
+	})
 }
