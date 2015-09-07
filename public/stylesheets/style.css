@@ -12,6 +12,9 @@ body {
 
 }
 
+.story{
+	box-shadow: 3px 3px 1px  #888888;
+}
 .stories-title {
 		font-size:48px;
 		color:#1790A0;
@@ -51,18 +54,17 @@ body {
 
 .story-title{ 
 	font-weight: 100;
-	margin:50px;
 	text-align: center;
 }
-
 .story-title-text {
+	margin-top: 50px;
 	color:white;
 }
 .story-container {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	color:white;
+	margin-bottom: 40px;
 }
 
 .story-section{
@@ -71,15 +73,22 @@ body {
 
 }
 .story-content {
-
-	background-color: #272723;
-    padding: 20px;
+	background-color: #F1FAF6;
+    padding: 40px;
     margin-bottom: 20px;
-    border-radius: 30px;
+    box-shadow: 3px 3px 1px  #888888;
+    border-radius: 5px;
+
 }
 
 .story-footer {
+	
+        text-align: center;
 
+}
+
+.story-button {
+	margin:10px;
 }
 
 .list-wrapper{
@@ -117,9 +126,14 @@ body {
 	padding:20px;
 	  background-color: #F1FAF6;
   margin-bottom: 40px;
+  	box-shadow: 3px 3px 1px  #888888;
+
 }
 .story-item-title{
 	text-align: center;
+
+    padding-bottom: 10px;
+
 }
 
 .story-item-content {
