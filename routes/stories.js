@@ -16,4 +16,8 @@ module.exports = function(app){
 	app.get('/bits', function(req,res, next){
 		res.render('bits', {title: "bits"});
 	})
+
+	app.get('/traveling', function(req, res, next){
+		res.render('serials', {title: "traveling"})
+	})
 }
