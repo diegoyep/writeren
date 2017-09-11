@@ -4,11 +4,24 @@
  */
 
 var express = require('express');
-
+var mongoose = require('mongoose');
 var http = require('http');
 var path = require('path');
 
 var app = express();
+
+const secrets = require('./config/secrets');
+
+/**
+ * Connect to MongoDB.
+ */
+mongoose.Promise = global.Promise;
+mongoose.connect(secrets.db);
+mongoose.connection.on('error', (err) => {
+  console.error(err);
+  console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'));
+  process.exit();
+});
 
 // all environments
 app.set('port', process.env.PORT || 4000);

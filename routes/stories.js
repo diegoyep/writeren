@@ -1,4 +1,4 @@
-
+const Story = require('../models/Story');
 
 module.exports = function(app){
 	app.get('/story', function(req, res, next){
@@ -6,19 +6,22 @@ module.exports = function(app){
 	});
 
 	app.get('/stories', function(req, res, next){
-		res.render('stories', {title:"stories"})
-	})
+		Story.find((err, stories) => {
+			res.render('stories', {title:"stories", 
+				stories: stories});
+		});
+	});
 
 	app.get('/serials', function(req, res, next){
 		res.render('serials', {title:"serials"});
 	})
 
-	app.get('/bits', function(req,res, next){
-		res.render('bits', {title: "bits"});
+	app.get('/madman', function(req,res, next){
+		res.render('madman', {title: "bits"});
 	})
 
-	app.get('/traveling', function(req, res, next){
-		res.render('serials', {title: "traveling"})
+	app.get('/poetry', function(req, res, next){
+		res.render('poetry', {title: "traveling"})
 	})
 
 	app.get('/about', function(req, res, next){

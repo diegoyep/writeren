@@ -15,14 +15,11 @@ block content
                     .list-title-div
                         h1.list-title Stories
 
-                    h2 Short
+                        if stories
 
-                    a(href="#") El extranjero 
-                    br
-                    a(href="#") Comentarios ineficientes
 
-                    h2 Long
+                            each story in stories
 
-                    a(href="#") No
-                    br
-                    a(href="#") Definicion Despota
+                                a(href= "#{story.link}" target="_blank") #{story.title}    
+                        
+                        h2 No published stories at the moment
